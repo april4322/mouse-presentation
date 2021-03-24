@@ -1,0 +1,81 @@
+@import "@/sass/_mixins.scss";
+
+body, html {
+  color: var(--color-text-primary);
+  font-family: var(--font-family);
+  font-size: 13px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  &:link, &:visited {
+    color: var(--color-text-secondary);
+  }
+  &:hover, &:focus {
+    color: var(--color-highlight);
+  }
+}
+
+input, select, button, textarea {
+  border: 1px solid #ccc;
+  outline: 0;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  padding: .5rem .6rem;
+  border-radius: .2rem;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+select, button, textarea {
+  -webkit-appearance: none;
+}
+
+select {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAA4UlEQVRYhe3WMQ6CMABA0Y9xcHDVlBM5OXsC4xXcvImzg/EQTNykHZx0JcHFxkKQtpQGhv5OtCG8pElLVlMzdYupAZAQvxJClxC6WSCW5kMu8jNwAVYRvlUBV6nkqb2QmSdmLvI3sI4AMNtIJZ/mRHs77pEBRRvQhTgCj0iAEth3LTQQUskKOESAlMBOKvmyIiJBegGdiJEhVsBfxEgQJ0AvIhDiDLAiBkK8AE4IT4g3wBnhCBkE8EJYIIMB3ogW5PadKkIAANQBQwixDXlfj8YtOlWz+KlJCF1C6BJCNwvEB8RnttABpb3tAAAAAElFTkSuQmCC);
+  background-size: 12px;
+  background-position: calc(100% - 8px) 50%;
+  padding-right: 26px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  width: 100%;
+
+  tbody {
+    td {
+      text-align: left;
+      vertical-align: middle;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      word-wrap: break-word;
+    }
+  }
+}
+
+.toggle-btn {
+  vertical-align: top!important;
+}
+
+[disabled] {
+  background-color: #dcdcdc!important;
+  border: 2px solid #eee!important;
+}
